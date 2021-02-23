@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import realtimedbIconURL from './realtimedb/realtimedb.png';
+import realtimedbInsetIconURL from './realtimedb/realtimedb-small.png';
+
 export default [
     {
         name: (
@@ -317,5 +320,23 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'Realtime Database',
+        extensionId: 'realtimedb',
+        iconURL: realtimedbIconURL,
+        insetIconURL: realtimedbInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Connect to Realtime Database."
+                description="Realtime Database"
+                id="gui.extension.realtimedb.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        helpLink: 'https://scratch.mit.edu/'
     }
 ];
